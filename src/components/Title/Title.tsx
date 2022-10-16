@@ -1,15 +1,15 @@
 import React, {FC, ReactNode} from 'react';
-import {StyleTitle} from './StyleTitle.styled';
+import {Card, StyleTitle} from './StyleTitle.styled';
 
-interface IProps{
-   children:ReactNode
-   as?:string
+interface IProps {
+   children?: ReactNode;
+   as:any
 }
 
-export const Title: FC<IProps> = ({children}) => {
+export const Title: FC<IProps> = ({children, as}) => {
    return (
       <>
-         <StyleTitle>{children}</StyleTitle>
+         <StyleTitle as={as}>{children}</StyleTitle>
       </>
    );
 };

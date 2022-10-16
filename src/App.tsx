@@ -8,9 +8,9 @@ export const App = () => (
       <Box m={'0 auto'}
            maxWidth={1500}
            pt={4}>
-         <Title>hello</Title>
-         <Title><Text/></Title>
-         <SubTitle as={'h2'}>манший заголовок</SubTitle>
+         <Title as={'h6'} >hello я h6</Title>
+         <Title as={'h1'}><Text/></Title>
+         <SubTitle as={'h2'}>манший заголовок h2</SubTitle>
       </Box>
    </div>
 );
